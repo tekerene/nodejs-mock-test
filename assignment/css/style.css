@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+ul li {
+    display: flex;
+   list-style: none;
+}
+li a {
+     flex-direction: row;
+    justify-content: space-between;
+    color: red;
+}
+.list {
+    color: red;
+    display: flex; 
+    justify-content: flex-start;
+}
+.container h2 {
+    color: red !important;
+}

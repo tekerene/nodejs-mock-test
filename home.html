@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS mock Test</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+   <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <nav class="bg-dark p-3">
+        <ul class="list d-flex justify-content-center text-uppercase">
+            <!-- <li><a href="/home">Home</a></li> -->
+            <li class="d-flex mr-5 "><a href="/parties">Parties</a></li>
+            <li class="d-flex"><a href="/votersInfo">Voters Info</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <h2 class="text-center justify-content-center m-5 d-flex ">E-Voting System Using Node JS</h2></div>
+    <hr>
+    <div class="row">
+         <h2 class=" col-sm-12 text-center text-info m-5">Register Now</h2>
+    </div>
+
+    </div>
+    <form action="/votersInfo class="text-center" method="POST">
+    <div class="form-group">
+        <label>FullNAME</label>
+        <input type="text" name="name">
+    </div>
+    <div class="form-group">
+        <label>Card Number</label>
+        <input type="number" name="cardNumber">
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" name="age">
+    </div>
+    <div class="form-group">
+        <select name="party" id="">
+            <option name="" value="Party List">select your favourite party
+                <option value="YYDM">YYDM</option>
+                <option value="">NFMC</option>
+                <option value="">EEU</option>
+                <option value="">LNWWM</option>
+            </option>
+        </select>
+       
+    </div>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>
