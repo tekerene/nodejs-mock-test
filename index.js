@@ -1,6 +1,5 @@
 const http = require('http');
 const fs = require('fs');
-const axios = request('axios');
 const request = require('request')
 
 
@@ -28,16 +27,16 @@ var addData = {"GET": (req, res)=> {
 }};
 
 // REGISTERED NEW VOTERS
-// http.server = request.post('/votersInfo', (req, res, body)=>{
-    axios.post('/votersInfo', (req, res)=>{
-        let votersName = req.body.name;
-        let card = req.body.cardNumber;
-        let age = req.body.age;
-        let party = req.body.party;
-        res.render('home.html');
+ http.server = request.post('/votersInfo', (req, res, body)=>{
+    
+        // let votersName = req.body.name;
+        // let card = req.body.cardNumber;
+        // let age = req.body.age;
+        // let party = req.body.party;
+       
         //var results = fs.writeFile('voters.txt', (req, res)=>{
-           res.end(`${votersName}: ${card}: ${age}: ${party}`) ;
-           console.log(votersName);
+        //    res.end(`${votersName}: ${card}: ${age}: ${party}`) ;
+        //    console.log(votersName);
 
         } );
 
